@@ -1,14 +1,69 @@
 <!DOCTYPE html>
-<html lang="de">
-<head>
-  <meta charset="UTF-8">
-  <title>Hotelzimmer-Buchungssystem</title>
+<html lang='de'>
+  <head>
+    <meta charset='UTF-8'>
+    <title>Hotelzimmer-Buchungssystem</title>
 
-</head>
-<body>
+  </head>
+  <body>
 
-<h1>Hotelzimmer-Buchungssystem</h1>
+    <h1>Hotelzimmer-Buchungssystem</h1>
+    <form action='https://it.bzz.ch/demo/formdata/index.php' method='post'>
+      <fieldset>
+        <label>Zimmertyp:
+          <select name='room' size='13' multiple>
+            <option>Einzelzimmer</option>
+            <option>Doppelzimmer</option>
+            <option>Familienzimmer</option>
+            <option>Deluxe-Zimmer</option>
+            <option>Superior-Zimmer</option>
+            <option>Junior Suite</option>
+            <option>Suite</option>
+            <option>Executive Suite</option>
+            <option>Studio</option>
+            <option>Appartement</option>
+            <option>Penthouse</option>
+            <option>Präsidentensuite</option>
+            <option>Bungalow</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>Zusatzleistungen:<br>
+          <input type='checkbox' name='zusatzleistungen' value='Kostenloses WLAN' id='check1'>
+          <label for='check1'>Kostenloses WLAN</label>
+          <input type='checkbox' name='zusatzleistungen' value='Fruehstuecksbuffet' id='check2'>
+          <label for='check2'>Frühstücksbuffet</label>
+          <input type='checkbox' name='zusatzleistungen' value='Zimmerservice' id='check3'>
+          <label for='check3'>Zimmerservice</label>
+          <input type='checkbox' name='zusatzleistungen' value='Waescheservice' id='check4'>
+          <label for='check4'>Wäscheservice</label>
+          <input type='checkbox' name='zusatzleistungen' value='Flughafentransfer' id='check5'>
+          <label for='check5'>Flughafentransfer</label>
+          <input type='checkbox' name='zusatzleistungen' value='Wellness-undSpa-Bereich' id='check6' >
+          <label for='check6'>Wellness- und Spa-Bereich</label>
+          <input type='checkbox' name='zusatzleistungen' value='Fitnesscenter' id='check8' >
+          <label for='check8'>Fitnesscenter</label>
+          <input type='checkbox' name='zusatzleistungen' value='Schwimmbad' id='check9' >
+          <label for='check9'>Schwimmbad</label>
+          <input type='checkbox' name='zusatzleistungen' value='Parkservice' id='check10' >
+          <label for='check10'>Parkservice</label>
+          <input type='checkbox' name='zusatzleistungen' value='Concierge-Service' id='check11' >
+          <label for='check11'>Concierge-Service</label><br>
+          <input type='checkbox' name='zusatzleistungen' value='Babysitting/Kinderbetreuung' id='check12' >
+          <label for='check12'>Babysitting/Kinderbetreuung</label>
+          <input type='checkbox' name='zusatzleistungen' value='Konferenz-undTagungsraeume' id='check13' >
+          <label for='check13'>Konferenz- und Tagungsräume</label>
+          <input type='checkbox' name='zusatzleistungen' value='Mietwagenservice' id='check14' >
+          <label for='check14'>Mietwagenservice</label>
+          <input type='checkbox' name='zusatzleistungen' value='RestaurantUndBar' id='check15' >
+          <label for='check15'>Restaurant und Bar</label>
+        </label>
+      </fieldset>
+      <fieldset>
+        <button type='submit'>Submit</button>
+      </fieldset>
+    </form>
 
-
-</body>
+  </body>
 </html>
